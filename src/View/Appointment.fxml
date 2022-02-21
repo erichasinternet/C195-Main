@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.appointmentController">
+    <children>
+        <VBox layoutX="74.0" layoutY="41.0" prefHeight="380.0" prefWidth="90.0">
+            <children>
+                <Label fx:id="appointmentidLabel" prefHeight="17.0" prefWidth="91.0" text="Appointment ID" />
+                <Label fx:id="titleLabel" layoutX="10.0" layoutY="10.0" text="Title">
+                    <padding>
+                        <Insets top="35.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="descriptionLabel" layoutX="10.0" layoutY="27.0" text="Description">
+                    <padding>
+                        <Insets top="35.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="contactLabel" layoutX="10.0" layoutY="64.0" text="Contact">
+                    <padding>
+                        <Insets top="35.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="typeLabel" layoutX="10.0" layoutY="101.0" text="Type">
+                    <padding>
+                        <Insets top="35.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="startLabel" layoutX="10.0" layoutY="138.0" text="Start Date / Time">
+                    <padding>
+                        <Insets top="35.0" />
+                    </padding>
+                </Label>
+                <Label fx:id="endLabel" layoutX="10.0" layoutY="175.0" text="End Date / Time">
+                    <padding>
+                        <Insets top="35.0" />
+                    </padding>
+                </Label>
+            <Label fx:id="customeridLabel" layoutX="10.0" layoutY="287.0" text="Customer ID">
+               <padding>
+                  <Insets top="35.0" />
+               </padding>
+            </Label>
+            <Label fx:id="useridLabel" layoutX="10.0" layoutY="339.0" text="User ID">
+               <padding>
+                  <Insets top="35.0" />
+               </padding>
+            </Label>
+            </children>
+        </VBox>
+        <VBox layoutX="175.0" layoutY="41.0" prefHeight="380.0" prefWidth="173.0">
+            <children>
+                <TextField fx:id="idField" disable="true" text="Automatically Generated" />
+                <TextField fx:id="titleField" layoutX="10.0" layoutY="10.0">
+                    <VBox.margin>
+                        <Insets top="25.0" />
+                    </VBox.margin>
+                </TextField>
+                <TextField fx:id="descriptionField" layoutX="10.0" layoutY="58.0">
+                    <VBox.margin>
+                        <Insets top="26.0" />
+                    </VBox.margin>
+                </TextField>
+            <ComboBox fx:id="contactCombo" onAction="#contactComboSelect" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets top="26.0" />
+               </VBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="typeCombo" layoutX="10.0" layoutY="162.0" onAction="#typeComboSelect" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets top="26.0" />
+               </VBox.margin>
+            </ComboBox>
+            <DatePicker fx:id="startDatePicker" prefHeight="25.0" prefWidth="97.0">
+               <VBox.margin>
+                  <Insets top="28.0" />
+               </VBox.margin></DatePicker>
+            <DatePicker fx:id="endDatePicker" layoutX="10.0" layoutY="266.0" prefHeight="25.0" prefWidth="98.0">
+               <VBox.margin>
+                  <Insets top="28.0" />
+               </VBox.margin>
+            </DatePicker>
+            <ComboBox fx:id="customerCombo" layoutX="10.0" layoutY="213.0" onAction="#customerComboSelect" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets top="26.0" />
+               </VBox.margin>
+            </ComboBox>
+            <ComboBox fx:id="userCombo" layoutX="10.0" layoutY="344.0" onAction="#userComboSelect" prefWidth="150.0">
+               <VBox.margin>
+                  <Insets top="26.0" />
+               </VBox.margin>
+            </ComboBox>
+            </children></VBox>
+        <Label fx:id="appointmentLabel" layoutX="175.0" layoutY="1.0" text="Appointment">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Button layoutX="164.0" layoutY="518.0" mnemonicParsing="false" onAction="#saveButtonClick" prefHeight="25.0" prefWidth="52.0" text="Save" />
+        <Button layoutX="241.0" layoutY="518.0" mnemonicParsing="false" onAction="#cancelButtonClick" text="Cancel" />
+      <ComboBox fx:id="startTimeCombo" layoutX="300.0" layoutY="296.0" onAction="#startComboSelect" prefHeight="25.0" prefWidth="67.0" />
+      <ComboBox fx:id="endTimeCombo" layoutX="300.0" layoutY="352.0" onAction="#endComboSelect" prefHeight="25.0" prefWidth="67.0" />
+    </children>
+</AnchorPane>

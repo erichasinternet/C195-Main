@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="847.0" prefWidth="1089.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.reportController">
+    <children>
+        <TableView layoutX="89.0" layoutY="86.0" prefHeight="119.0" prefWidth="911.0">
+            <columns>
+                <TableColumn fx:id="appointmentidColumn" prefWidth="97.0" text="Appointment ID" />
+                <TableColumn fx:id="titleColumn" prefWidth="91.0" text="Title" />
+                <TableColumn fx:id="descriptionColumn" prefWidth="140.0" text="Description" />
+                <TableColumn fx:id="contactColumn" prefWidth="146.0" text="Contact" />
+                <TableColumn fx:id="typeColumn" minWidth="0.0" prefWidth="105.0" text="Type" />
+                <TableColumn fx:id="startColumn" prefWidth="104.0" text="Start Date / Time" />
+                <TableColumn fx:id="endColumn" prefWidth="96.0" text="End Date / Time" />
+                <TableColumn fx:id="customeridColumn" minWidth="0.0" prefWidth="77.0" text="Customer ID" />
+                <TableColumn fx:id="useridColumn" minWidth="0.0" prefWidth="54.0" text="User ID" />
+            </columns>
+        </TableView>
+        <Label fx:id="typeLabel" layoutX="89.0" layoutY="59.0" text="Sort by Type">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="monthLabel" layoutX="89.0" layoutY="247.0" text="Sort by Month">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="contactLabel" layoutX="89.0" layoutY="445.0" text="Sort by Contact">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="89.0" layoutY="647.0" text="Sort by Customer ID">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="reportLabel" layoutX="494.0" layoutY="1.0" text="Reports">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="typeCombo" layoutX="189.0" layoutY="60.0" prefWidth="150.0" />
+        <ComboBox fx:id="monthCombo" layoutX="204.0" layoutY="248.0" prefWidth="150.0" />
+        <ComboBox fx:id="contactCombo" layoutX="213.0" layoutY="446.0" prefWidth="150.0" />
+        <ComboBox fx:id="customeridCombo" layoutX="250.0" layoutY="648.0" prefWidth="150.0" />
+        <Button fx:id="backButton" layoutX="525.0" layoutY="808.0" mnemonicParsing="false" onAction="#backButtonClick" text="Back" />
+      <TableView layoutX="89.0" layoutY="273.0" prefHeight="119.0" prefWidth="911.0">
+         <columns>
+            <TableColumn fx:id="appointmentidColumn1" prefWidth="97.0" text="Appointment ID" />
+            <TableColumn fx:id="titleColumn1" prefWidth="91.0" text="Title" />
+            <TableColumn fx:id="descriptionColumn1" prefWidth="140.0" text="Description" />
+            <TableColumn fx:id="contactColumn1" prefWidth="146.0" text="Contact" />
+            <TableColumn fx:id="typeColumn1" minWidth="0.0" prefWidth="105.0" text="Type" />
+            <TableColumn fx:id="startColumn1" prefWidth="104.0" text="Start Date / Time" />
+            <TableColumn fx:id="endColumn1" prefWidth="96.0" text="End Date / Time" />
+            <TableColumn fx:id="customeridColumn1" minWidth="0.0" prefWidth="77.0" text="Customer ID" />
+            <TableColumn fx:id="useridColumn1" minWidth="0.0" prefWidth="54.0" text="User ID" />
+         </columns>
+      </TableView>
+      <TableView layoutX="89.0" layoutY="471.0" prefHeight="119.0" prefWidth="911.0">
+         <columns>
+            <TableColumn fx:id="appointmentidColumn11" prefWidth="97.0" text="Appointment ID" />
+            <TableColumn fx:id="titleColumn11" prefWidth="91.0" text="Title" />
+            <TableColumn fx:id="descriptionColumn11" prefWidth="140.0" text="Description" />
+            <TableColumn fx:id="contactColumn11" prefWidth="146.0" text="Contact" />
+            <TableColumn fx:id="typeColumn11" minWidth="0.0" prefWidth="105.0" text="Type" />
+            <TableColumn fx:id="startColumn11" prefWidth="104.0" text="Start Date / Time" />
+            <TableColumn fx:id="endColumn11" prefWidth="96.0" text="End Date / Time" />
+            <TableColumn fx:id="customeridColumn11" minWidth="0.0" prefWidth="77.0" text="Customer ID" />
+            <TableColumn fx:id="useridColumn11" minWidth="0.0" prefWidth="54.0" text="User ID" />
+         </columns>
+      </TableView>
+      <TableView layoutX="90.0" layoutY="673.0" prefHeight="119.0" prefWidth="911.0">
+         <columns>
+            <TableColumn fx:id="appointmentidColumn111" prefWidth="97.0" text="Appointment ID" />
+            <TableColumn fx:id="titleColumn111" prefWidth="91.0" text="Title" />
+            <TableColumn fx:id="descriptionColumn111" prefWidth="140.0" text="Description" />
+            <TableColumn fx:id="contactColumn111" prefWidth="146.0" text="Contact" />
+            <TableColumn fx:id="typeColumn111" minWidth="0.0" prefWidth="105.0" text="Type" />
+            <TableColumn fx:id="startColumn111" prefWidth="104.0" text="Start Date / Time" />
+            <TableColumn fx:id="endColumn111" prefWidth="96.0" text="End Date / Time" />
+            <TableColumn fx:id="customeridColumn111" minWidth="0.0" prefWidth="77.0" text="Customer ID" />
+            <TableColumn fx:id="useridColumn111" minWidth="0.0" prefWidth="54.0" text="User ID" />
+         </columns>
+      </TableView>
+    </children>
+</AnchorPane>
