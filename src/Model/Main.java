@@ -1,5 +1,6 @@
 package Model;
 
+import Database.JDBC;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -13,10 +14,16 @@ public class Main extends Application {
      */
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("../View/Home.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../View/Login.fxml"));
         primaryStage.setTitle("Scheduling Application");
-        primaryStage.setScene(new Scene(root, 1000, 700));
+        primaryStage.setScene(new Scene(root, 600, 600));
         primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        JDBC.startConnection();
+        launch(args);
+        JDBC.closeConnection();
     }
 }
 
