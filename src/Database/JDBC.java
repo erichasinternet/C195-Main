@@ -10,26 +10,24 @@ public abstract class JDBC {
     private static final String vendor = ":mysql:";
     private static final String location = "//localhost:3306/";
     private static final String database = "client_schedule";
-    private static final String user = "sqlUser";
+    private static final String jdbURL = protocol + vendor + location + database + "?connectionTimeZone=SERVER";
+    private static final String username = "sqlUser";
     private static final String password = "Passw0rd!";
-    private static final String jdbcURL = protocol + vendor + location + database + "?connectionTimeZone=SERVER";
     private static Connection connection;
 
     /**
-     * Opens a connection to the configured MySQL database.
-     * @return Connection
+     * Opens connection to the database
      */
-    public static Connection startConnection() {
+    public static void openConnection() {
         try {
-            connection = DriverManager.getConnection(jdbcURL, user, password);
+            connection = DriverManager.getConnection(jdbURL, username, password);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return connection;
     }
 
     /**
-     * Method to close the connection to the MySQL database.
+     * Closes connection to the database
      */
     public static void closeConnection() {
         try {
@@ -40,7 +38,7 @@ public abstract class JDBC {
     }
 
     /**
-     * Getter method for the database connection
+     * Getter for the database connection
      *
      * @return Connection
      */
